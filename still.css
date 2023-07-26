@@ -1,92 +1,103 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Times New Roman", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", sans-serif;
 }
 
 body {
-    max-width: 100%;
-    height: 2000px;
-    background-image: url('images/tobias-reich-Evw7_g2qn_g-unsplash.jpg'); 
-    background-size: cover;
-    background-attachment: fixed;
+  max-width: 100%;
+  height: 2000px;
+  background-image: url('images/tobias-reich-Evw7_g2qn_g-unsplash.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
+/* HEADER - logo, jezici, meni */
+
 .header {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .header .div1 {
-    background-color: #D9D9D9;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    height: 60px;
-    width: 100%;
-    padding: 0 5%;
+  background-color: #D9D9D9;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  padding: 0 5%;
 }
 
 .header .div1 .jezici ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 20px;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
 
 }
+
 .header ul {
   background-color: white;
 }
 
 .header .div1 .jezici ul li a {
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 0em;
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
-    background-color: white;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0em;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  background-color: white;
 
 }
 
 .header .div1 .jezici ul li .active {
-    text-decoration: none;
-    color: rgb(171, 169, 169);
+  text-decoration: none;
+  color: rgb(171, 169, 169);
 }
 
 .header .navbar {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .header .navbar ul {
-    display: flex;
-    flex: 1;
+  display: flex;
+  flex: 1;
 }
 
 .header .navbar ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    list-style-type: none;
-    border: 0.5px solid #6C6C6C;
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  list-style-type: none;
+  border: 0.5px solid #6C6C6C;
+  padding: 2rem;
 
 }
 
 .header .navbar ul li h3 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
 }
 
 .header .navbar ul li p {
-    font-family: "Roboto", sans-serif;
-    font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
 }
 
 
-/* Slideshow container */
+header .navbar .burger {
+  display: none;
+  font-size: 20px;
+}
+
+
+
+/* Slideshow 3 slike */
+
 .slideshow-container {
   max-width: auto;
   position: absolute;
@@ -96,14 +107,16 @@ body {
 
 .slideshow-container .circleImg {
   position: absolute;
- 
+
 }
+
 
 .slideshow-container .circleImg:hover {
   cursor: pointer;
 }
-/* Next & previous buttons */
-.prev, .next {
+
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -118,130 +131,110 @@ body {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
+/* div - leva strana slika desna pasus */
 
 main .divVeliki {
   background-color: white;
-    display: flex;
-    margin: 3rem 0;
-    gap: 2rem;
-    position: relative;
-  }
+  display: flex;
+  padding: 80px 0;
+  gap: 2rem;
+  position: relative;
+}
 
 main .divVeliki .slikaLevo {
-    flex: 1;
+  flex: 1;
 }
 
 main .divVeliki .slikaLevo .imgLevo {
-    max-width: none;
+  max-width: none;
 }
 
 main .divVeliki .tekstDesno {
-    flex: 1;
-    margin-right: 10rem;
+  flex: 1;
+  margin-right: 10rem;
 }
 
 main .divVeliki .tekstDesno .gore .naslovVeliki {
-    display: flex;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 34px;
-    color: #303030;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 34px;
+  color: #303030;
 }
 
 
 main .divVeliki .dvgOneRight .gore .naslovMali h4 {
-    color: #474747;
-    font-family: Inter;
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-top: 2%;
+  color: #474747;
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 2%;
 
 
 }
 
 main .divVeliki .tekstDesno .gore .lineSiva {
-    height: 3px;
-    width: 500px;
-    background-color: #b9b6b6;
-    margin-top: 5%;
+  height: 3px;
+  width: 500px;
+  background-color: #b9b6b6;
+  margin-top: 5%;
 }
 
 main .divVeliki .tekstDesno .doleTekst {
-    margin-top: 20px;
-    font-family: "Roboto", sans-serif;
-  }
-  main .divVeliki .tekstDesno .doleTekst p {
-    font-style: "Roboto";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22.4px;
-    color: rgba(71, 71, 71, 1);
-    ;
-  }
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
 
-  main .divVeliki .tekstDesno .doleTekst .oNama {
-    width: 184px;
-    height: 48px;
-    display: inline-block;
-    top: 1374px;
-    left: 765px;
-    font-size: medium;
-    border-radius: 4px;
-    gap: 8px;
-    background: rgba(191, 15, 15, 1);
-    color: #fff;
-    text-align: center;
-    border: 0;
-    margin-top: 3%;
-    font-weight: 500;
-    border-radius: 4px;
+main .divVeliki .tekstDesno .doleTekst p {
+  font-style: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.4px;
+  color: rgba(71, 71, 71, 1);
+  ;
+}
 
-  }
+main .divVeliki .tekstDesno .doleTekst .oNama {
+  width: 184px;
+  height: 48px;
+  display: inline-block;
+  top: 1374px;
+  left: 765px;
+  font-size: medium;
+  border-radius: 4px;
+  gap: 8px;
+  background: rgba(191, 15, 15, 1);
+  color: #fff;
+  text-align: center;
+  border: 0;
+  margin-top: 3%;
+  font-weight: 500;
+  border-radius: 4px;
 
-  * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
+}
+
+
 
 /* Slideshow container */
 .slideshow-container {
   background-color: white;
-  max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  
+}
+.mySlides img {
+  width: 100%;
 }
 
 .slideshow-container .circleImg {
@@ -253,76 +246,15 @@ body {font-family: Verdana, sans-serif; margin:0}
 .slideshow-container .circleImg:hover {
   cursor: pointer;
 }
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-.container {
-  position: relative;
-  width: 100%;
-}
 
 .image {
   display: block;
-  height:400px;
-  width:2000px;
+  height: 400px;
+  width: 2000px;
   text-align: center;
 }
 
-
-.text {
-  color: white;
-  font-size: 50px;
-  height: 50%;
-  width: 50%;
-  text-align: center;
-}
 
 h4 {
   font-size: 20px;
@@ -331,26 +263,56 @@ h4 {
 
 .sivalinija::after {
   content: "";
-  display:block;
+  display: block;
   width: 80%;
   height: 6px;
   background-color: rgb(209, 201, 201);
 }
 
-.text::after{
-  content: "";
-  display:block;
-  width: 80%;
-  height: 6px;
-  background-color: rgb(246, 89, 89);
+/* Parallax - slika je body divovi beli */
+.parallax-container {
+  position: relative;
+  height: 400px;
+  /* Podesite visinu prema vašim potrebama */
+  overflow: hidden;
 }
+
+.parallax-image {
+  width: 100%;
+  height: 500px;
+}
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.parallax-content h1 {
+  font-size: 36px;
+}
+
+.parallax-content p {
+  font-size: 18px;
+}
+
+/* Tri male slike sa opisom */
 
 main .triSlikeMale {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-color: white;
+  padding: 80px 0;
+}
+.triSlikeMale .slikica {
+  flex: 20%;
+  margin-left: 50px;
 }
 
 main .triSlikeMale p {
@@ -360,9 +322,10 @@ main .triSlikeMale p {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  
+
 }
-.slikiceLinijice::after{
+
+.slikiceLinijice::after {
   content: "";
   height: 2px;
   width: 20%;
@@ -371,6 +334,16 @@ main .triSlikeMale p {
   display: block;
 
 }
+
+.velikiMaliNaslovi {
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
 /* mobilni */
 @media only screen and (max-width: 600px) {
 
@@ -378,71 +351,45 @@ main .triSlikeMale p {
     flex-direction: column;
     height: auto;
   }
+
   .middle .text {
-  font-size: 16px;
+    font-size: 16px;
   }
 
   .header .navbar .nav-links {
-    display: none; 
+    display: none;
   }
 
   .header .navbar .burger {
-    display: block; 
+    display: block;
     background-color: #fff;
   }
 
+  
+    /* Prikazujemo horizontalni meni kad je burger meni otvoren */
   .header .navbar .nav-links.show {
-    display: flex; /* Prikazujemo horizontalni meni kad je burger meni otvoren */
+    display: flex;
     flex-direction: column;
     position: relative;
-    top: 0px; /* Prilagodite ovu vrijednost kako biste postigli željeni raspored */
-
+    top: 0px;
     background-color: #ffffff;
   }
 
   .header .navbar .nav-links li {
     display: flex;
-  
+
   }
 
   .header .navbar .nav-links li h3 {
     display: block;
-  font-size: 10px;}
+    font-size: 10px;
+  }
 
-  .header .navbar .nav-links li p{
-    display: block; 
+  .header .navbar .nav-links li p {
+    display: block;
 
-}
-}
-header .navbar .burger {
-  display: none; 
-  font-size: 20px;
-}
-
-.parallax-container {
-  position: relative;
-  height: 400px; /* Podesite visinu prema vašim potrebama */
-  overflow: hidden;
-}
-
-.parallax-image {
-  width: 100%;
-  height: 500px; 
-}
-
-.parallax-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; 
-  color: #fff; 
-}
-
-.parallax-content h1 {
-  font-size: 36px; 
-}
-
-.parallax-content p {
-  font-size: 18px;
+  }
+  main .triSlikeMale {
+    flex-direction: column;
+  }
 }
