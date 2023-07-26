@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="still.css" 
-</head>
+    <link rel="stylesheet" href="still.css" </head>
 
 <body>
     <header class="header">
@@ -28,7 +27,8 @@
             </div>
         </div>
         <nav class="navbar">
-            <ul>
+            <div class="burger"> &#128173;</div>
+            <ul class="nav-links">
                 <li>
                     <h3> O-NAMA</h3>
                     <p>vizija za uspeh</p>
@@ -59,73 +59,75 @@
                 </li>
             </ul>
         </nav>
+
     </header>
     <main>
 
-        
-<div class="slideshow-container">
 
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="images/Video.png" style="width:100%">
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="images/Video.png" style="width:100%">
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="images/Video.png" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-    
-    <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
+        <div class="slideshow-container">
 
+            <div class="mySlides fade">
+                <img src="images/Video.png">
+            </div>
 
-        <div class="Image">
-            <img src="images/Video.png" alt="Dvg Company Video" class="img100" />
+            <div class="mySlides fade">
+                <img src="images/Video.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Video.png">
+            </div>
+
             <img src="images/arrow-down-circle.png" class="circleImg">
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
         </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            // slider
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+            }
+
+            // burger menu
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+
+
+        </script>
+
 
         <div class="divVeliki">
             <div class="slikaLevo">
@@ -134,12 +136,13 @@
             <div class="tekstDesno">
                 <div class="gore">
                     <div class="naslovVeliki">DVG Company</div>
-                    <div class="line"> </div>
+
 
                     <div class="naslovMali">
-                        <h4> Veleprodaja i maloprodaja kozmetike i kućne hemije </h4>
+                        <h4 class="sivalinija"> Veleprodaja i maloprodaja kozmetike i kućne hemije </h4>
+
                     </div>
-                    <div class="lineSiva"></div>
+
                     <div class="doleTekst">
                         <p>
                             DVG Company d.o.o. je trgovinsko preduzeće osnovano 2008. godine
@@ -156,6 +159,32 @@
                 </div>
             </div>
         </div>
+
+        
+        <div class="parallax-container">
+            <div class="parallax-image"></div>
+            <div class="parallax-content">
+              <h1>Parallax</h1>
+            </div>
+          </div>
+        
+        <div class="triSlikeMale">
+            <div class="slikica1">
+                <img src="images/Rectangle 130.png" alt="1" />
+                <p class="slikiceLinijice"> Postanite naš partner</p>
+            </div>
+            <div class="slikica2">
+                <img src="images/Rectangle 129.png" alt="2">
+                <p class="slikiceLinijice"> Naši proizvodi </p>
+            </div>
+            <div class="slikica3">
+                <img class="slikaklasa" src="images/Rectangle 128.png" alt="3">
+                <p class="slikiceLinijice"> Uvoz iz Mađarske </p>
+            </div>
+
+        </div>
+
+        
 
     </main>
 
