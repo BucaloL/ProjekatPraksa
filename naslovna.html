@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="still.css" </head>
+    <link rel="stylesheet" href="still.css">
+
+</head>
 
 <body>
     <header class="header">
@@ -119,6 +121,7 @@
             });
 
 
+
         </script>
 
 
@@ -211,33 +214,67 @@
                     našI kupci. </p>
 
             </div>
+           
+            <div class="slider-container">
+                <div class="slides">
+                <div class="slide">
+                    <img src="images/Rectangle 139.png">
+                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
+                    </p>                </div>
+                <div class="slide"><img src="images/Rectangle 136.png">
+                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
+                    </p>
+                </div>
+                <div class="slide"><img src="images/Rectangle 137.png">
+                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
+                    </p>
+                </div>
+                <div class="slide"><img src="images/Rectangle 138.png">
+                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
+                    </p>
+                </div>
+                <div class="slide"><img src="images/Rectangle 139.png">
+                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
+                    </p>
+                </div>
+                <div class="slide"><img src="images/Rectangle 141.png">
+                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
+                    </p>
+                </div>
+            </div>
 
-            <div class="proizvodi">
-                  <div class="pIme">
-                    <img class="kartica" src="images/Rectangle 136.png">
-                    <p>KESE I FOLIJE</p>
-                </div>
-                  <div class="pIme">
-                    <img class="kartica" src="images/Rectangle 137.png">
-                    <p>ZA KUHINJU</p>
-                </div>
-                  <div class="pIme">
-                    <img class="kartica" src="images/Rectangle 138.png">
-                    <p>UBRUSI I TOALET PAPIRI</p>
-                </div>
-                  <div class="pIme">
-                    <img class="kartica" src="images/Rectangle 139.png">
-                    <p>KOZMETIKA</p>
-                </div>
-                  <div class="pIme">
-                    <img class="kartica" src="images/Rectangle 141.png">
-                    <p>PLASTICNE KANTE</p>
-                </div>
+<script>
+    const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
 
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+
+// Dodajte event listenere za prelazak na sledeću i prethodnu karticu
+document.querySelector('.next-btn').addEventListener('click', nextSlide);
+document.querySelector('.prev-btn').addEventListener('click', prevSlide);
+</script>
+
+       
+           
         
+     
         </div>
-        
-
     </main>
 
 </body>
