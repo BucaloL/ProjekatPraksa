@@ -465,6 +465,51 @@ padding: 80px;
 }
 
 
+.krajDiv {
+  display: flex;
+  background-color: #35d863;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+.naslovBrendova{
+  font-family: Inter;
+font-size: 28px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+.brendovi {
+  display: flex;
+  align-items: center;
+  width: Hug (115px);
+  gap: 12px;
+  margin-top: 3%;
+  margin-left: 190px;
+
+
+  
+}
+
+.brandImage{
+  width: 100%;
+}
+.brandImage p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+ 
+  
+}
+
+
 
 
 /* mobilni */

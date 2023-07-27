@@ -214,67 +214,107 @@
                     našI kupci. </p>
 
             </div>
-           
+
             <div class="slider-container">
                 <div class="slides">
-                <div class="slide">
-                    <img src="images/Rectangle 139.png">
-                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
-                    </p>                </div>
-                <div class="slide"><img src="images/Rectangle 136.png">
-                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
-                    </p>
-                </div>
-                <div class="slide"><img src="images/Rectangle 137.png">
-                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
-                    </p>
-                </div>
-                <div class="slide"><img src="images/Rectangle 138.png">
-                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
-                    </p>
-                </div>
-                <div class="slide"><img src="images/Rectangle 139.png">
-                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
-                    </p>
-                </div>
-                <div class="slide"><img src="images/Rectangle 141.png">
-                    <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE
-                    </p>
+                    <div class="slide">
+                        <img src="images/Rectangle 139.png">
+                        <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE</p>
+                    </div>
+                    <div class="slide"><img src="images/Rectangle 136.png">
+                        <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/Rectangle 137.png">
+                        <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/Rectangle 138.png">
+                        <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/Rectangle 139.png">
+                        <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/Rectangle 141.png">
+                        <p class="tekst-kartice" style="font-size:medium;">PLASTICNE KANTE</p>
+                    </div>
                 </div>
             </div>
 
-<script>
-    const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
+                <script>
+                    const slides = document.querySelectorAll('.slide');
+                    let currentSlide = 0;
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
-}
+                    function showSlide(index) {
+                        slides.forEach((slide, i) => {
+                            slide.classList.toggle('active', i === index);
+                        });
+                    }
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
+                    function nextSlide() {
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        showSlide(currentSlide);
+                    }
 
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
-}
+                    function prevSlide() {
+                        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                        showSlide(currentSlide);
+                    }
 
-showSlide(currentSlide);
+                    showSlide(currentSlide);
 
-// Dodajte event listenere za prelazak na sledeću i prethodnu karticu
-document.querySelector('.next-btn').addEventListener('click', nextSlide);
-document.querySelector('.prev-btn').addEventListener('click', prevSlide);
-</script>
+                    // Dodajte event listenere za prelazak na sledeću i prethodnu karticu
+                    document.querySelector('.next-btn').addEventListener('click', nextSlide);
+                    document.querySelector('.prev-btn').addEventListener('click', prevSlide);
+                </script>
 
-       
-           
-        
-     
-        </div>
+            </div>
+            <div class="krajDiv">
+                <p class="naslovBrendova">Istaknuti brendovi za koje radimo distribuciju</p>
+                <div class="brendovi">
+                  <div class="brend">
+                    <div class="brandImage">
+                      <img src="images/logoi-01.png"/>
+                      <p> Venish</p>
+                    </div>
+                  </div>
+                  <div class="brend">
+                    <div class="brandImage">
+                        <img src="images/logoi-02.png"/>
+                        <p> Ajax</p>
+                    </div>
+                  </div>
+                  <div class="brend">
+                    <div class="brandImage">
+                        <img src="images/logoi-03.png"/>
+                        <p> Nivea</p>
+                    </div>
+                  </div>
+                  <div class="brend">
+                    <div class="brandImage">
+                        <img src="images/logoi-04.png"/>
+                        <p> Dove</p>
+                    </div>
+                  </div>
+                  <div class="brend">
+                    <div class="brandImage">
+                        <img src="images/logoi-05.png"/>
+                        <p> Palmolive </p>
+                    </div>
+                  </div>
+                  <div class="brend">
+                    <div class="brandImage">
+                        <img src="images/logoi-06.png"/>
+                        <p> Cif</p>
+                    </div>
+                </div>
+                </div>
+                
+                <button class="dugme">Svi brendovi u našem portfoliju</button>
+               
+              </div>
     </main>
 
 </body>
