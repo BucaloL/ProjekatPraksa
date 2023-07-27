@@ -18,6 +18,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .header .div1 {
@@ -59,6 +60,7 @@ body {
 .header .navbar {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .header .navbar ul {
@@ -151,7 +153,7 @@ main .divVeliki .slikaLevo {
 }
 
 main .divVeliki .slikaLevo .imgLevo {
-  max-width: none;
+  width: 100%;
 }
 
 main .divVeliki .tekstDesno {
@@ -183,12 +185,6 @@ main .divVeliki .dvgOneRight .gore .naslovMali h4 {
 
 }
 
-main .divVeliki .tekstDesno .gore .lineSiva {
-  height: 3px;
-  width: 500px;
-  background-color: #b9b6b6;
-  margin-top: 5%;
-}
 
 main .divVeliki .tekstDesno .doleTekst {
   margin-top: 20px;
@@ -340,9 +336,160 @@ main .triSlikeMale p {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.velikiMaliNaslovi h3{
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  align-items: center;
+  justify-content: center;
+}
+
+.velikiMaliNaslovi p{
+font-family: Inter;
+font-size: 28px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: center;
+margin-top: 20px;
+
+}
+.linijaBrojka::after{
+content: "";
+height: 6px;
+width: 110%;
+background-color: #bf0f0f;
+margin-top:20px;
+display: block;
+justify-content: right;
+}
+
+.statistika {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  background-image:url('images/Rectangle\ 140.png') ;
+  width:100%;
+top: 2767px;
+left: -1px;
+
+}
+.statistika ul {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-top: 4%;
+  height: 9%;
+}
+.statistika ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  list-style-type: none;
+  border-right: 0.5px solid #6C6C6C;
+  color: #fff;
+  
+  
+
+
+}
+.statistika ul li h3{
+  font-family: Inter;
+font-size: 46px;
+font-weight: 900;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: center;
+}
+.statistika ul li p{
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* Div sa puno elemenata */
+.najveciDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(244, 244, 244, 1);
+  font-family: "Roboto";
+  align-items: center;  padding: 70px;
   
 }
 
+.najveciDiv p{
+  font-family: Inter;
+font-size: 28px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: center;
+width: 506px;
+
+}
+
+.naslovILinija::after{
+content: "";
+height: 6px;
+width: 100%;
+background-color: #bf0f0f;
+display: block;
+justify-content: right;
+margin-top: 20px;
+}
+
+.tekstic{
+ text-align: center;
+ width: 524px;
+}
+
+.tekstic p{
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 22px;
+text-align: center;
+padding: 80px;
+
+}
+
+
+.proizvodi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
+
+}
+.proizvodi {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 80px 0;
+}
+.proizvodi .pIme {
+  flex: 20%;
+  margin-left: 50px;
+}
+.kartica {
+  flex: 20%;
+}
 
 /* mobilni */
 @media only screen and (max-width: 600px) {
@@ -365,7 +512,6 @@ main .triSlikeMale p {
     background-color: #fff;
   }
 
-  
     /* Prikazujemo horizontalni meni kad je burger meni otvoren */
   .header .navbar .nav-links.show {
     display: flex;
@@ -392,4 +538,5 @@ main .triSlikeMale p {
   main .triSlikeMale {
     flex-direction: column;
   }
+ 
 }
