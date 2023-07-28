@@ -11,7 +11,7 @@ body {
   background-image: url('images/tobias-reich-Evw7_g2qn_g-unsplash.jpg');
   background-size: cover;
   background-attachment: fixed;
-  
+
 }
 
 /* HEADER - logo, jezici, meni */
@@ -228,8 +228,9 @@ main .divVeliki .tekstDesno .doleTekst .oNama {
   position: relative;
   margin: 0;
   padding: 0;
-  
+
 }
+
 .mySlides img {
   width: 100%;
 }
@@ -307,6 +308,7 @@ main .triSlikeMale {
   background-color: white;
   padding: 80px 0;
 }
+
 .triSlikeMale .slikica {
   flex: 20%;
   margin-left: 50px;
@@ -339,9 +341,10 @@ main .triSlikeMale p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
-.velikiMaliNaslovi h3{
+
+.velikiMaliNaslovi h3 {
   font-family: Roboto;
   font-size: 42px;
   font-weight: 700;
@@ -351,36 +354,38 @@ main .triSlikeMale p {
   justify-content: center;
 }
 
-.velikiMaliNaslovi p{
-font-family: Inter;
-font-size: 28px;
-font-weight: 400;
-line-height: 34px;
-letter-spacing: 0em;
-text-align: center;
-margin-top: 20px;
+.velikiMaliNaslovi p {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 20px;
 
 }
-.linijaBrojka::after{
-content: "";
-height: 6px;
-width: 110%;
-background-color: #bf0f0f;
-margin-top:20px;
-display: block;
-justify-content: right;
+
+.linijaBrojka::after {
+  content: "";
+  height: 6px;
+  width: 110%;
+  background-color: #bf0f0f;
+  margin-top: 20px;
+  display: block;
+  justify-content: right;
 }
 
 .statistika {
   display: flex;
   justify-content: center;
   background-color: #fff;
-  background-image:url('images/Rectangle\ 140.png') ;
-  width:100%;
-top: 2767px;
-left: -1px;
+  background-image: url('images/Rectangle\ 140.png');
+  width: 100%;
+  top: 2767px;
+  left: -1px;
 
 }
+
 .statistika ul {
   display: flex;
   justify-content: center;
@@ -388,6 +393,7 @@ left: -1px;
   margin-top: 4%;
   height: 9%;
 }
+
 .statistika ul li {
   display: flex;
   flex-direction: column;
@@ -397,20 +403,22 @@ left: -1px;
   list-style-type: none;
   border-right: 0.5px solid #6C6C6C;
   color: #fff;
-  
-  
+
+
 
 
 }
-.statistika ul li h3{
+
+.statistika ul li h3 {
   font-family: Inter;
-font-size: 46px;
-font-weight: 900;
-line-height: 34px;
-letter-spacing: 0em;
-text-align: center;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
 }
-.statistika ul li p{
+
+.statistika ul li p {
   font-family: Inter;
   font-size: 18px;
   font-weight: 400;
@@ -425,61 +433,63 @@ text-align: center;
   flex-direction: column;
   background-color: rgba(244, 244, 244, 1);
   font-family: "Roboto";
-  align-items: center;  padding: 70px;
-  
+  align-items: center;
+  padding: 70px;
+
 }
 
-.najveciDiv p{
+.najveciDiv p {
   font-family: Inter;
-font-size: 28px;
-font-weight: 400;
-line-height: 34px;
-letter-spacing: 0em;
-text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
 
 }
 
-.naslovILinija::after{
-content: "";
-height: 6px;
-width: 100%;
-background-color: #bf0f0f;
-display: block;
-justify-content: right;
-margin-top: 20px;
+.naslovILinija::after {
+  content: "";
+  height: 6px;
+  width: 100%;
+  background-color: #bf0f0f;
+  display: block;
+  justify-content: right;
+  margin-top: 20px;
 }
 
-.tekstic{
- text-align: center;
- width: 524px;
+.tekstic {
+  text-align: center;
+  width: 524px;
 }
 
-.tekstic p{
-font-family: Roboto;
-font-size: 12px;
-font-weight: 400;
-line-height: 22px;
-text-align: center;
-padding: 80px;
+.tekstic p {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  padding: 80px;
 
 }
 
 
 .krajDiv {
   display: flex;
-  background-color: #35d863;
+  background-color: #fff;
   flex-direction: column;
   align-items: center;
 
 
 }
-.naslovBrendova{
+
+.naslovBrendova {
   font-family: Inter;
-font-size: 28px;
-font-weight: 400;
-line-height: 34px;
-letter-spacing: 0em;
-text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
 
 }
 
@@ -491,13 +501,50 @@ text-align: center;
   margin-top: 3%;
   margin-left: 190px;
 
-
-  
 }
 
-.brandImage{
+.dugme {
+  width: Hug (255px);
+  top: 4382px;
+  left: 590px;
+  padding: 0px 16px 0px 16px;
+  border-radius: 4px;
+  gap: 8px;
+  background: rgba(191, 15, 15, 1);
+  margin-top: 5%;
+  align-items: center;
+  border: 2px;
+  margin-bottom: 3%;
+}
+
+.dugme p {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.naslovBrendova::after {
+
+  content: "";
+  display: block;
+  background-color: rgb(209, 201, 201);
+  align-items: center;
+  width: 524px;
+  height: 3px;
+  left: 457.5px;
+  margin-top: 4%;
+
+}
+
+
+.brandImage {
   width: 100%;
 }
+
 .brandImage p {
   font-family: Inter;
   font-size: 18px;
@@ -505,12 +552,25 @@ text-align: center;
   line-height: 34px;
   letter-spacing: 0em;
   text-align: center;
- 
+
+
+}
+footer .slikaf{
+  background-size: cover;
+  
+  background-color: #fff;
+
+
   
 }
-
-
-
+footer .slikaf img {
+  display: flex;
+  list-style-type: none;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
 
 /* mobilni */
 @media only screen and (max-width: 600px) {
@@ -533,7 +593,7 @@ text-align: center;
     background-color: #fff;
   }
 
-    /* Prikazujemo horizontalni meni kad je burger meni otvoren */
+  /* Prikazujemo horizontalni meni kad je burger meni otvoren */
   .header .navbar .nav-links.show {
     display: flex;
     flex-direction: column;
@@ -556,10 +616,11 @@ text-align: center;
     display: block;
 
   }
+
   main .triSlikeMale {
     flex-direction: column;
   }
- 
+
 }
 
 
@@ -580,6 +641,7 @@ text-align: center;
   scroll-snap-align: start;
   border: 1px solid #ccc;
 }
+
 .slides {
   display: flex;
   flex-direction: row;
@@ -590,13 +652,13 @@ text-align: center;
   display: block;
 }
 
-.slide .images{
+.slide .images {
   color: #db2d3c;
   position: relative;
 }
+
 .slide .images .tekst-kartice {
   position: absolute;
   left: 20px;
   bottom: 20px;
 }
-
